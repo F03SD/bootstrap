@@ -31,11 +31,8 @@
     var $window = $(window)
     var $body   = $(document.body)
 
-    var navHeight = $('.navbar').outerHeight(true) + 10
-
     $body.scrollspy({
-      target: '.bs-docs-sidebar',
-      // offset: navHeight
+      target: '.bs-docs-sidebar'
     })
 
     $window.on('load', function () {
@@ -72,7 +69,7 @@
 
     // tooltip demo
     $('.tooltip-demo').tooltip({
-      selector: '[data-toggle=tooltip]',
+      selector: '[data-toggle="tooltip"]',
       container: 'body'
     })
 
@@ -80,7 +77,7 @@
     $('.popover-test').popover()
 
     $('.bs-docs-navbar').tooltip({
-      selector: 'a[data-toggle=tooltip]',
+      selector: 'a[data-toggle="tooltip"]',
       container: '.bs-docs-navbar .nav'
     })
 
